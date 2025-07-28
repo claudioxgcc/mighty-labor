@@ -23,6 +23,7 @@
       margin-bottom: 0.2em;
       color: #EF4423;
       position: relative;
+      display: inline-block;
     }
 
     .tagline {
@@ -57,13 +58,13 @@
       border-radius: 3px;
     }
 
-    /* ⚡ Always-on Lightning Bolt */
+    /* ⚡ Lightning Bolt */
     .bolt {
       position: absolute;
-      top: -40px;
-      left: 68%;
-      width: 90px;
-      height: 135px;
+      top: -30px;
+      left: calc(100% - 50px);
+      width: 40px;
+      height: 60px;
     }
 
     .bolt svg {
@@ -72,6 +73,28 @@
       fill: none;
       stroke: #444;
       stroke-width: 2;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      .tagline {
+        font-size: 1.25rem;
+      }
+
+      body {
+        font-size: 1rem;
+        margin: 40px auto;
+      }
+
+      .bolt {
+        top: -20px;
+        left: calc(100% - 35px);
+        width: 30px;
+        height: 45px;
+      }
     }
   </style>
 </head>
@@ -122,4 +145,3 @@
 
 </body>
 </html>
-
